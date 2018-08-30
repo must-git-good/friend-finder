@@ -13,7 +13,15 @@ module.exports = function (server) {
 
     server.post("/api/friends", function (req, res) {
         res.json(friends);
-        console.log("We've pushed new data up to the friends data.")
+        console.log("A POST to /api/friends happened.");
+    });
+
+    server.post("/api/new/friend", function (req, res) {
+        console.log(req.body);
+        addFriend = JSON.stringify(req.body);
+        console.log(addFriend);
+        addFriend = JSON.parse(addFriend);
+        console.log(addFriend);
     });
 };
 

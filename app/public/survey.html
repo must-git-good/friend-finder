@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script> -->
+
     <title>Find-a-Friend</title>
 </head>
+
 <body>
     <h1> The Survey will go here. </h1>
     <a href="/">Go home.</a>
 
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+
+            <form id="survey-form">
+
+                <div class="form-group">
+                    <label for="nameInput">Your Name:</label>
+                    <input type="text" name="name" class="form-control" id="survey-name" placeholder="Your Name here">
+                </div>
 
 
 
-    
+                <div class="form-group">
+                    <label for="formControlRange">Question Number One:</label>
+                    <input id="formControlRange1" type="range" class="form-control-range" defaultValue="5" min="0" max="10" name="Q1" step="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="formControlRange">Question Number Two:</label>
+                    <input id="formControlRange2" type="range" class="form-control-range" defaultValue="5" min="0" max="10" name="Q2" step="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="formControlRange">Question Number Three:</label>
+                    <input id="formControlRange3" type="range" class="form-control-range" defaultValue="5" min="0" max="10" name="Q3" step="1">
+                </div>
+                <!-- THIS IS WHERE YOU ARE. GET THIS DATA OUT AS A JSON FILE -->
+                <button type="submit" name="survey-submit" form="survey-form" formaction="/api/new/friend" formmethod="POST">Find a Code Buddy!</button>
+            </form>
+
+
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <script>
+        // var friends = require("../data/friends.js");   CALL IT WITH AJAX IT'S ON THE SERVER.
+
+        // var currentUser = {};
+        // var surveyResults = [];
+
+
+
+        console.log("Your script is activated.");
+        console.log(friends);
+
+
+    </script>
 </body>
+
 </html>
