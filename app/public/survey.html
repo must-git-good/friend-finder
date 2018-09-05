@@ -31,8 +31,8 @@
                 </div>
                 <div class="modal-body">
                     <p><span id="user"></span>, the person that will best complement your strengths while coding is:</p>
-                    <p><span id="code-buddy-result"></span><br><span id="user-face"></span></p><br>
-                    <p>So make sure you're getting to know them!</p>
+                    <p><span id="code-buddy-result"></span><span id="user-face"></span></p><br>
+                    <p><span id="bot-text">So make sure you're getting to know them!</span></p>
                 </div>
                 <div class="modal-footer">
                     <h3> </h3>
@@ -231,7 +231,7 @@
             };
             // console.log("Comp scores array: " + compatibilityScoresArray);
             var mostCompatible = compatibilityScoresArray.reduce(function (a, b) {
-                return Math.min(a, b);
+                return Math.max(a, b);
             });
             for (var i = 0; i < compatibilityScoresArray.length; i++) {
                 if (compatibilityScoresArray[i] == mostCompatible) {
