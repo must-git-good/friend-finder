@@ -1,0 +1,199 @@
+/* CSS STYLESHEET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    background-color: rgb(15,15,15);
+    background-color: rgba(15,15,15, .95);
+    text-align: center;
+    padding: 20px 0px;
+    z-index: 2;
+}
+body {
+    background-image: url("../images/code_bg.jpg");
+    background-color: rgb(46, 46, 46);
+    height: (100% + 150px);
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#survey-form{
+    background-color: rgb(90,90,90);
+    background-color: rgba(90,90,90, .9);
+    padding: 25px 50px;
+    font-size: 1.5rem;
+    color: rgb(230, 230, 230);
+    text-shadow: 2px 2px 3px rgba(20,20,20, .9);
+    position: relative;
+    width: 100%;
+    top: 150px;
+}
+
+#myBtn{
+    padding: 3px 10px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgb(230, 230, 230);
+}
+h2{
+    font-weight: 600;
+    font-size: 2.3rem;
+    padding: 0px;
+}
+h5{
+    color: rgb(230, 230, 230);
+}
+
+.sidetext{
+    position: relative;
+    top: 30px;
+}
+
+.side{
+    position: fixed;
+    top: 45vh;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(230, 230, 230);
+    background-color: rgba(230, 230, 230, .6);
+    padding: auto auto;
+    vertical-align: center;
+}
+/* #user-face{
+    float:right;
+}
+#code-buddy-result{
+    float:left;
+} */
+
+#right-area{
+    position: fixed;
+    right: 0px;
+    text-align: right;
+    padding: 0px 20px;
+}
+#left-area{
+    position: fixed;
+    left: 0px;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    z-index:50;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content{
+    background-image: url("../images/code_bg.jpg");
+    background-size: 300%;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    /* background-image: url("../images/code_bg.jpg"); */
+    background-color: rgb(90,90,90);
+    background-color: rgba(90,90,90, .2);
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: rgb(15,15,15);
+    background-color: rgba(15,15,15, .9);
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    /* background-image: url("../images/code_bg.jpg"); */
+    background-color: rgb(90,90,90);
+    background-color: rgba(90,90,90, .2);
+    color: white;
+}
+p{
+    color: rgb(230, 230, 230);
+    font-size: 1.8rem;
+}

@@ -1,32 +1,17 @@
-
-
-// This is a reference to the friendsList array of friend objects. Not sure yet where it's needed, but it needs to exist.
 var friends = require("../data/friends.js");
-
 
 
 module.exports = function (server) {
 
     server.get("/api/friends", function (req, res) {
-        res.json(friends);
+            res.json(friends);
+            console.log("A GET request has happened related to the following data: " + JSON.stringify(friends, null, 2));
     });
 
     server.post("/api/friends", function (req, res) {
-        res.json(friends);
-        console.log("A POST to /api/friends happened.");
+            friends.push(req.body);
+            // res.json({"List_Updated": true});
+            console.log("A POST of new data is pushed to /api/friends.");
     });
 
-    server.post("/api/new/friend", function (req, res) {
-        console.log(req.body);
-        addFriend = JSON.stringify(req.body);
-        console.log(addFriend);
-        addFriend = JSON.parse(addFriend);
-        console.log(addFriend);
-    });
 };
-
-
-
-
-
-
